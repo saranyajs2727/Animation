@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="load.css">
+<title>Loading</title>  
+
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader">
+    <section>
+        <div class="loader loader-1">
+          <div class="loader-outter"></div>
+          <div class="loader-inner"></div>
+        </div>
+      </section>
+</div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Password</label>
+          </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+        </form>
+    </div>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(Loginpage, 4000);
+}
+
+function Loginpage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>
